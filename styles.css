@@ -1,0 +1,256 @@
+:root {
+    /* Text */
+    --txt-vdd-blue: hsl(238, 29%, 16%);
+    --txt-s-red: hsl(14, 88%, 65%);
+    --text-vdg--blue: hsl(237, 12%, 33%);
+    --dg-blue: hsl(240, 6%, 50%);
+  
+    /* Gradient */
+    --s-violet: hsl(273, 75%, 66%);
+    --s-blue: hsl(240, 73%, 65%);
+  
+    /* Divider */
+    --lg-blue: hsl(240, 5%, 91%);
+  }
+  
+  body {
+     font-family: font-family: 'Kumbh Sans', sans-serif;
+     margin: 0;
+     box-sizing: border-box;
+     overflow-x: hidden;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0%;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 2rem;
+  }
+
+  button {
+    border: none;
+    background: transparent;
+    margin: 0;
+    cursor: pointer;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+  button:hover,
+  button:active {
+    color: var(--txt-s-red);
+  }
+
+
+  .full-screen {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      background: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  
+      overflow-x: hidden;  }
+
+  .container {
+    width: 52rem;
+    height: 28rem;
+    border-radius: 25px;
+     
+    display: grid;
+    grid-template-columns: 20.8rem 30.2rem;
+    column-gap: 1rem;
+    background: #ffffff;
+  }
+
+  .section-1 {
+   
+    border-radius: 25px;
+    background-image: url('./images/bg-pattern-desktop.svg');
+    background-size: 245%;
+    background-position: right 8px top -220px;
+    background-repeat: no-repeat;
+    position: relative;
+    
+  }
+
+  .section-1 div {
+    overflow: hidden;
+    height: 100%;
+  }
+ 
+
+
+.img-1 {
+  
+  position: absolute;
+    z-index: 1;
+    width: 9rem;
+    top: 11rem;
+    right: 17rem;
+}
+
+.img-2 {
+  
+
+    position: relative;
+    width: 21rem;
+    top: 5rem;
+    right: 3.4rem;
+}
+
+  .section-2 {
+     
+    padding: 2rem;
+    border-radius: 25px;
+  }
+
+  .faq {
+    
+    height: 100%;
+    width: 100%;
+
+  }
+
+  .faq-whole {
+
+    margin-top: .8rem;
+    
+    
+    
+  }
+
+.faq-sub {
+  margin-bottom: .8rem;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding-bottom: .8rem;
+}
+
+.faq-content {
+  font-size: 0.8rem;
+  display: none;
+  margin-top: .8rem;
+  
+  font-family: 'Kumbh Sans', sans-serif;
+}
+  .active {
+    color: var(--txt-s-red);
+  }
+.open {
+  display: block;
+}
+  @media only screen and (max-width: 900px) {
+
+    .container {
+        width: 45rem;
+        height: 22rem;
+        
+        /* border:solid red 5px; */
+        
+        grid-template-columns: 18rem 26.1rem;
+        
+      }
+
+      .img-1 {
+        
+        width: 6rem;
+        
+        right: 15rem;
+    }
+
+      .img-2 {
+      
+        width: 19rem;
+        
+        right: 3rem;
+    }
+
+     
+    
+     
+
+  }
+
+  @media only screen and (max-width: 750px) {
+    .full-screen {
+     padding:10rem 0;
+      height: 100vh;
+    }
+    
+    .container {
+      width: 22rem;
+    height: fit-content;
+    /* border:solid red 5px; */
+    grid-template-rows: 8rem 30rem;
+    grid-template-columns: none;
+    }
+
+
+    .section-1 {
+    background-size: 80%;
+      background-position: right 35px top -170px;
+      }
+
+      .img-1 {
+  
+        position: absolute;
+          z-index: 1;
+          width: 6rem;
+          top: -3rem;
+          right: 12.9rem;
+      }
+      
+      .img-2 {
+      position: absolute;
+        width: 15rem;
+        top: -7rem;
+       right: 3.5rem;
+      }
+  
+  }
+
+  @media only screen and (max-width: 385px) {
+
+
+    .full-screen {
+      padding:10rem 0;
+       height: 100vh;
+     }
+
+    .section-1 {
+      background-size: 80%;
+        background-position: right 25px top -120px;
+        }
+  
+
+    .img-1 {
+  
+      position: absolute;
+        z-index: 1;
+        width: 4rem;
+        top: -2rem;
+        right: 9rem;
+    }
+    
+    .img-2 {
+    position: absolute;
+      width: 10rem;
+      top: -4.7rem;
+     right: 2.7rem;
+    }
+   
+    .full-screen {
+      padding:7rem 0;
+       height: 100vh;
+     }
+    .container {
+      width: 15rem;
+    height: 40rem;
+      
+      /* border:solid red 5px; */
+      
+      grid-template-rows: 5rem 25rem;
+      grid-template-columns: none;
+      
+    }
+    
+  }
